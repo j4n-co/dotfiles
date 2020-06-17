@@ -8,7 +8,7 @@
   - ~/Gerrit
   - ~/Github
 
-- shell
+- shell:
   -
     command: chsh -s /bin/bash
     description: Change shell back to bash in MacOS Catalina.
