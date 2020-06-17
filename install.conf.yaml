@@ -1,5 +1,12 @@
 - link:
     ~/.ssh: ssh
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore_global: git/.gitignore_global
+    ~/.stCommitMsg: git/.stCommitMsg
+
+- create:
+  - ~/Gerrit
+  - ~/Github
 
 - shell
   -
@@ -26,3 +33,6 @@
   -
     command: nvm alias default v10.15.2
     description: Set the previously installed version as the default.
+  -
+    command: brew install git-review && brew cask install sourcetree
+    description: Install git related apps.
