@@ -1,3 +1,6 @@
+- link:
+    ~/.ssh: ssh
+
 - shell
   -
     command: chsh -s /bin/bash

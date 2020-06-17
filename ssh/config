@@ -1,0 +1,64 @@
+ForwardAgent no
+
+Host *
+	ServerAliveInterval 120
+
+Host !bast1002.wikimedia.org
+	User jdrewniak
+	ProxyCommand ssh -a -W %h:%p jdrewniak@bast1002.wikimedia.org
+	IdentityFile /Users/jdrewniak/.ssh/wikimedia_prod
+	AddKeysToAgent yes
+	UseKeychain yes
+
+Host bastion1.eqiad.wmflabs
+	Hostname bastion.wmflabs.org
+	ProxyCommand none
+	IdentityFile /Users/jdrewniak/.ssh/wikimedia
+
+Host bastlabs
+	HostName bastion-eqiad.wmflabs.org
+	User jdrewniak
+	IdentityFile /Users/jdrewniak/.ssh/wikimedia
+
+Host *.eqiad.wmflabs !bastion-eqiad.wmflabs.org
+	User jdrewniak
+	IdentityFile /Users/jdrewniak/.ssh/wikimedia
+	ProxyCommand ssh -a -W %h:%p jdrewniak@primary.bastion.wmflabs.org
+	AddKeysToAgent yes
+	UseKeychain yes
+
+Host *.wmflabs
+	User jdrewniak
+
+Host analytics*
+	User jdrewniak
+	ProxyCommand ssh -a -W %h:%p jdrewniak@bast1002.wikimedia.org
+	IdentityFile /Users/jdrewniak/.ssh/wikimedia_prod
+
+Host *.eqiad.wmnet
+	User jdrewniak
+	IdentityFile /Users/jdrewniak/.ssh/wikimedia_prod
+	ProxyCommand ssh -a -W %h:%p jdrewniak@bast1002.wikimedia.org
+
+Host people
+	HostName rutherfordium.eqiad.wmnet
+	User jdrewniak
+	ProxyCommand ssh -a -W %h:%p jdrewniak@bast1002.wikimedia.org
+	IdentityFile /Users/jdrewniak/.ssh/wikimedia_prod
+
+Host stat4
+	User jdrewniak
+	HostName stat1004.eqiad.wmnet
+	ProxyCommand ssh -a -W %h:%p jdrewniak@bast1002.wikimedia.org
+	IdentityFile /Users/jdrewniak/.ssh/wikimedia_prod
+
+
+Host gerrit
+	Hostname gerrit.wikimedia.org
+	Port 29418
+	User jdrewniak
+	IdentityFile /Users/jdrewniak/.ssh/wikimedia
+
+Host supersalon.org
+     User root
+     IdentityFile ~/.ssh/supersalon_ubuntu-14.04
