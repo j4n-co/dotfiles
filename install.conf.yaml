@@ -1,4 +1,6 @@
 - link:
+    ~/.bash_profile: bash/.bash_profile
+    ~/functions: functions
     ~/.ssh: ssh
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore_global: git/.gitignore_global

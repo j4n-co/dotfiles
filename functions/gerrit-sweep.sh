@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# exit on error
+set -e
+
+function gerrit-sweep(){
+
+	MASTER_CHANGE_IDS="$(git log master | grep Change-Id: )"
+	for BRANCH in $( git branch | cut -c 3- | grep -v '^master$' )
+	do
+		ID="$(git log -n1 "$BRANCH" | grep Change-Id: | head -n1)"
+		if echo "$MASTER_CHANGE_IDS" | grep "$ID" > /dev/null; then
+			git branch -D "$BRANCH"
+		else
+			echo "Kept branch $BRANCH"
+		fi
+	done
+}
+
+export -f gerrit-sweep
