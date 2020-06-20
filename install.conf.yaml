@@ -1,7 +1,8 @@
 - link:
     ~/.bash_profile: bash/.bash_profile
     ~/functions: functions
-    ~/.ssh: ssh
+    ~/.ssh/config: ssh/config
+    ~/.ssh/known_hosts: ssh/known_hosts
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore_global: git/.gitignore_global
     ~/.stCommitMsg: git/.stCommitMsg
@@ -12,29 +13,14 @@
 
 - shell:
   -
-    command: chsh -s /bin/bash
-    description: Change shell back to bash in MacOS Catalina.
-  -
-    command: xcode-select --install
-    description: Install the XCode command-line tools, you're gonna need them eventually.
-  -
-    command: curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh
-    description: Install homebrew.
-  -
-    command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh
-    description: Install Node version manager.
-  -
-    command: curl -sSL https://get.rvm.io | bash
-    description: Install Ruby version manager & Ruby.
-  -
-    command: source ~/.bash_profile
-    description: Reload shell after install NVM.
-  -
-    command: nvm install v10.15.2
-    description: Install whichever version of Node is running in CI at work.
-  -
-    command: nvm alias default v10.15.2
-    description: Set the previously installed version as the default.
-  -
-    command: brew install git-review && brew cask install sourcetree
-    description: Install git related apps.
+    command: /bin/bash ./scripts/install-homebrew.sh
+    description: ⚡️ Install homebrew.
+  - 
+    command: /bin/bash ./scripts/install-nvm.sh
+    description: ⚡️ Install NVM and Node v10.
+  - 
+    command: /bin/bash ./scripts/update-bash.sh
+    description: ⚡️ Install Bash 4 and make it the default shell.
+  - 
+    command: defaults write com.apple.Finder AppleShowAllFiles true
+    description: ⚡️ Show hidden files in finder.

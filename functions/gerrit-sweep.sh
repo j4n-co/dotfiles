@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# exit on error
-set -e
-
 function gerrit-sweep(){
 
 	MASTER_CHANGE_IDS="$(git log master | grep Change-Id: )"

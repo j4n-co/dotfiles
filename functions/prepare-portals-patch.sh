@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# exit on error
-set -e
-
 function prepare-portals-patch() {
 
 	cd ~/Gerrit/operations/mediawiki-config
