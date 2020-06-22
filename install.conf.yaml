@@ -27,3 +27,6 @@
   -
     command: defaults write bluetoothaudiod "Enable AptX codec" -bool true
     description: ⚡️ Enable AptX codec for bluetooth headphones.
+  - 
+    command: defaults write bluetoothaudiod "Enable AAC codec" -bool false
+    description: ⚡️ Disable ACC codec for bluetooth headphones (forces AptX).
