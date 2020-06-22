@@ -12,7 +12,7 @@ function prepare-portals-patch() {
 	echo "#### new commit"
 	git commit -m "Bumping portals to master
 
-	Bug: T128546"
+Bug: T128546"
 	git --no-pager log -n 2
 }
 
