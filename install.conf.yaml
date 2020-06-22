@@ -24,3 +24,6 @@
   - 
     command: defaults write com.apple.Finder AppleShowAllFiles true
     description: ⚡️ Show hidden files in finder.
+  -
+    command: defaults write bluetoothaudiod "Enable AptX codec" -bool true
+    description: ⚡️ Enable AptX codec for bluetooth headphones.
