@@ -2,7 +2,7 @@
 	email = jan.drewniak@gmail.com
 	name = Jan Drewniak
 [core]
-	excludesfile = /Users/jdrewniak/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [difftool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\"
 [mergetool "sourcetree"]
@@ -17,7 +17,7 @@
 [merge]
   tool = meld
 [commit]
-	template = /Users/jdrewniak/.stCommitMsg
+	template = ~/.stCommitMsg
 [gitreview]
 	remote = origin
 	username = jdrewniak
