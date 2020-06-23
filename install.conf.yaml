@@ -22,6 +22,9 @@
     command: /bin/bash ./scripts/update-bash.sh
     description: ⚡️ Install Bash 4 and make it the default shell.
   - 
+    command: brew install autojump
+    description: ⚡️ Install the autojump utility for faster CLI diretory navigation.
+  - 
     command: defaults write com.apple.Finder AppleShowAllFiles true
     description: ⚡️ Show hidden files in finder.
   -
