@@ -1,15 +1,18 @@
 - link:
-    ~/.bash_profile: bash/.bash_profile
-    ~/functions: functions
+    ~/.profile: bash/.profile
+    ~/.bash/functions: bash/functions
+    ~/.bash/scripts: bash/scripts
     ~/.ssh/config: ssh/config
     ~/.ssh/known_hosts: ssh/known_hosts
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore_global: git/.gitignore_global
     ~/.stCommitMsg: git/.stCommitMsg
+    ~/.pureline.conf: bash/scripts/pureline/configs/powerline_full_256col.conf
 
 - create:
   - ~/Gerrit
   - ~/Github
+  - ~/.bash
 
 - shell:
   -

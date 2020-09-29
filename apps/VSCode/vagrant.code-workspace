@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Gerrit/mediawiki/vagrant/mediawiki/skins/Vector"
+		},
+		{
+			"path": "../../../../Gerrit/mediawiki/vagrant/mediawiki"
+		},
+		{
+			"path": "../../../../Gerrit/mediawiki/vagrant/settings.d"
+		},
+		{
+			"path": "../../../../Gerrit/mediawiki/vagrant/logs"
+		}
+	],
+	"settings": {}
+}

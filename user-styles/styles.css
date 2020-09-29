@@ -1,0 +1,31 @@
+
+/*=============================================
+=            Gerrit                           =
+=============================================*/
+
+.groupContent {
+    box-shadow: var(--elevation-level-2) !important;
+}
+ 
+.groupHeader {    
+    font-weight: var(--font-weight-bold) !important;
+    background-color: var(--comment-background-color) !important;
+    mix-blend-mode: darken;
+    font-size: var(--font-size-h2) !important;
+    line-height: var(--line-height-h2) !important;
+}
+
+.groupHeader .cell {
+    padding-top: var(--spacing-xxl) !important;
+    padding-bottom: var(--spacing-l) !important;
+}
+
+.groupTitle {
+    background-color: var(--dark-theme-secondary-color) !important;
+}
+.groupTitle td {
+    color: white !important; 
+}
+
+/*=====  End of Gerrit  ======*/
+

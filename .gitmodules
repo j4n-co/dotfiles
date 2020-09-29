@@ -2,3 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "bash/scripts/pureline"]
+	path = bash/scripts/pureline
+	url = https://github.com/chris-marsh/pureline.git
