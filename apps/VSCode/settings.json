@@ -1,0 +1,54 @@
+{
+    "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "editor.codeActionsOnSave":  {
+        "source.fixAll.eslint": true
+    }, 
+    "editor.tokenColorCustomizations": {
+		"textMateRules": [
+		  {
+			"name": "Comment",
+			"scope": [
+			  "comment",
+			  "comment.block",
+			  "comment.block.documentation",
+			  "comment.line",
+			  "comment.line.double-slash",
+			  "punctuation.definition.comment",
+			],
+			"settings": {
+			  "fontStyle": "italic"
+			}
+		  }
+		]
+	},
+	"editor.renameOnType": true,
+	"typescript.suggest.paths": false,
+	"path-intellisense.mappings": {
+		
+	},
+	"workbench.iconTheme": "material-icon-theme",
+	"files.associations": {
+		"*.txt": "wikitext"
+	},
+	"diffEditor.ignoreTrimWhitespace": false,
+	"window.zoomLevel": 0,
+	"terminal.integrated.fontFamily": "Fira Code",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"vim.normalModeKeyBindings": [
+		{
+            "before": ["<leader>", "m"],
+            "commands": [
+                "bookmarks.toggle"
+            ]
+        },
+        {
+            "before": ["<leader>", "b"],
+            "commands": [
+                "bookmarks.list"
+            ]
+        }
+	],
+	"vim.leader": "<space>",
+}
