@@ -7,6 +7,28 @@ Install by running `./install`.
 
 Or just to create the symlinks: `./install --only link`.
 
+## Reinstalling MacOS
+
+From [Apple Support](https://support.apple.com/en-ca/guide/mac-help/mchlp1599/mac)
+
+1. On your Mac, choose Apple menu  > Restart.
+2. Immediately as your Mac restarts, do one of the following:
+
+   - *Install the latest version of macOS from the internet: Press and hold **Option-Command-R** until a spinning globe appears, then release the keys.*
+
+     This option installs the latest version of macOS that is compatible with your computer.
+
+   - *Reinstall your computer’s original version of macOS from the internet:* Press and hold **Shift-Option-Command-R** until a spinning globe appears, then release the keys.
+
+     This option reinstalls the most recent version of macOS that came with your computer, including any available updates to that version.
+
+   - *Reinstall macOS from the built-in recovery disk on your computer: Press and hold **Command-R** until the Utilities window appears.*
+     This option reinstalls the version of macOS stored on your computer’s built-in recovery disk, including any updates that you installed.
+
+   - Select Reinstall macOS, then click Continue.
+
+   - Follow the onscreen instructions. In the pane where you select a disk, select your current macOS disk (in most cases, it’s the only one available).
+
 ## Setting up a new Mac
 
 After going through the iCloud setup, tackle system preference first.
