@@ -49,5 +49,15 @@
     {
         "key": "cmd+b",
         "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+`",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+escape",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
     }
 ]

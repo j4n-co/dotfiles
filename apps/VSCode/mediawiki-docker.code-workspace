@@ -1,0 +1,44 @@
+{
+	"folders": [
+		{
+			"name": "Vector",
+			"path": "../../../../Gerrit/mediawiki/core/skins/Vector"
+		},
+		{
+			"name": "EventStreamConfig",
+			"path": "../../../../Gerrit/mediawiki/core/extensions/EventStreamConfig"
+		},
+		{
+			"name": "EventLogging",
+			"path": "../../../../Gerrit/mediawiki/core/extensions/EventLogging"
+		},
+		{
+			"name": "Popups",
+			"path": "../../../../Gerrit/mediawiki/core/extensions/Popups"
+		},
+		{
+			"name": "MobileFrontend",
+			"path": "../../../../Gerrit/mediawiki/core/extensions/MobileFrontend"
+		},
+		{
+			"name": "WikimediaEvents",
+			"path": "../../../../Gerrit/mediawiki/core/extensions/WikimediaEvents"
+		},
+		{
+			"name": "MinervaNeue",
+			"path": "../../../../Gerrit/mediawiki/core/skins/MinervaNeue"
+		},
+		{
+			"name": "secondary",
+			"path": "../../../../Gerrit/schemas/secondary"
+		},
+		{
+			"name": "UniversalLanguageSelector",
+			"path": "../../../../Gerrit/mediawiki/core/extensions/UniversalLanguageSelector"
+		},
+		{
+			"name": "core",
+			"path": "../../../../Gerrit/mediawiki/core"
+		}
+	]
+}

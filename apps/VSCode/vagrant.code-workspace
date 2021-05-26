@@ -11,6 +11,12 @@
 		},
 		{
 			"path": "../../../../Gerrit/mediawiki/vagrant/logs"
+		},
+		{
+			"path": "../../../../Gerrit/mediawiki/vagrant/mediawiki/extensions/WikimediaEvents"
+		},
+		{
+			"path": "../../../../Gerrit/mediawiki/vagrant/mediawiki/extensions/EventLogging"
 		}
 	],
 	"settings": {}
